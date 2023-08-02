@@ -1,4 +1,4 @@
-# SCM-DD-COLLECTOR
+# GH-DD-COLLECTOR
 
 A custom GitHub Action that collect and publish any given action (workflow) result to Datadog.
 
