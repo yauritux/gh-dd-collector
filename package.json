@@ -1,0 +1,21 @@
+{
+  "name": "gh-dd-collector",
+  "version": "1.0.0",
+  "description": "Action that collect and publish any provided GitHub action result as custom metrics to Datadog",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist -a -s --license LICENSE.md"
+  },
+  "keywords": [],
+  "author": "Yauri Attamimi (https://yauritux.link)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@vercel/ncc": "^0.36.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}

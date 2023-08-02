@@ -1,0 +1,21 @@
+name: 'gh-dd-collector'
+description: 'Action to collect and publish some GitHub actions (workflow) result to Datadog'
+inputs:
+  action-name:
+    description: 'a GitHub action name. E.g., release'
+    required: true
+  datadog-base-url:
+    description: 'Your Datadog URL'
+    required: true
+  dd-api-key:
+    description: 'DataDog API KEY'
+    required: true
+  dd-application-key:
+    description: 'DataDog Application KEY'
+    required: true
+outputs:
+  result:
+    description: 'Success / Failure response from the action as executed by the GitHub runner'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
